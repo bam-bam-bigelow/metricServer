@@ -5,7 +5,8 @@ DOC="develserver_capacity"
 PERIOD_FILTER_START=1723730401
 TPARAMS="textserver_capacity"
 SAVED_FILTERS=""
-OUTPUT_FILE="./static/output_file.txt" # Change this to the actual path where you want to save the file
+CUR_DIR=$(dirname "$0")
+OUTPUT_FILE=$CUR_DIR"/static/output_file.txt" # Change this to the actual path where you want to save the file
 
 # Capture current time, CPU usage, memory usage, and disk usage
 CURRENT_TIME=$(date "+%Y-%m-%d %H:%M:%S")
